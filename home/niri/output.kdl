@@ -1,0 +1,17 @@
+output "eDP-1"{
+	mode "2880x1800@60"
+	scale 1.5
+	position x=0 y=0
+    focus-at-startup
+}
+/-output "DP-1"{
+	mode "2560x1440@180.001"
+	scale 1.0
+	position x=0 y=0
+    focus-at-startup
+}
+
+layer-rule{
+    match namespace="awww-daemonoverview"
+     place-within-backdrop true
+}

@@ -1,0 +1,175 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "inputs": {
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1731533236,
+        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "home-manager": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1784407317,
+        "narHash": "sha256-iZrxHToDJWnvt+5LGAtvuQMTy1NZYlNEKbKaVtBJNcc=",
+        "type": "tarball",
+        "url": "https://gh.xmly.dev/https://github.com/nix-community/home-manager/archive/master.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://gh.xmly.dev/https://github.com/nix-community/home-manager/archive/master.tar.gz"
+      }
+    },
+    "miyu": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "miyu-src": "miyu-src",
+        "nixpkgs": "nixpkgs",
+        "rust-overlay": "rust-overlay"
+      },
+      "locked": {
+        "lastModified": 1784482031,
+        "narHash": "sha256-X1HhYX70WMI/akJ3QOEuYoTjwmSVcZfkETugqgHDFRo=",
+        "type": "tarball",
+        "url": "https://gh.xmly.dev/https://github.com/yigexuanmu/Miyu/archive/master.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://gh.xmly.dev/https://github.com/yigexuanmu/Miyu/archive/master.tar.gz"
+      }
+    },
+    "miyu-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1784477244,
+        "narHash": "sha256-pxYNnqhqJt6SEu8HcBk/HqafGI3RnQbC6wyU5tFdz/E=",
+        "owner": "SHORiN-KiWATA",
+        "repo": "Miyu",
+        "rev": "77f60cd34dcc6ae8cb4c0adbdd2155f7728984d9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "SHORiN-KiWATA",
+        "repo": "Miyu",
+        "type": "github"
+      }
+    },
+    "nixos-hardware": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1784310968,
+        "narHash": "sha256-rkSPTePrKqs4dg+i7ZFCq93+HrClac6oSwXX927SVjA=",
+        "type": "tarball",
+        "url": "https://gh.xmly.dev/https://github.com/NixOS/nixos-hardware/archive/refs/heads/master.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://gh.xmly.dev/https://github.com/NixOS/nixos-hardware/archive/refs/heads/master.tar.gz"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1784356753,
+        "narHash": "sha256-12KrbMiWLcf8m7pCvAtZh1ZrgF85ZXDXvfR/fWTKy84=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1767892417,
+        "narHash": "sha256-8bW3q88CEg2u4hSP66Vf4lpbLonHz7hqDNBMcCY7E9U=",
+        "rev": "3497aa5c9457a9d88d71fa93a4a8368816fbeeba",
+        "type": "tarball",
+        "url": "https://releases.nixos.org/nixos/unstable/nixos-26.05pre924538.3497aa5c9457/nixexprs.tar.xz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://channels.nixos.org/nixos-unstable/nixexprs.tar.xz"
+      }
+    },
+    "nixpkgs_3": {
+      "locked": {
+        "lastModified": 1784356753,
+        "narHash": "sha256-12KrbMiWLcf8m7pCvAtZh1ZrgF85ZXDXvfR/fWTKy84=",
+        "type": "tarball",
+        "url": "https://gh.xmly.dev/https://github.com/nixos/nixpkgs/archive/nixos-unstable.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://gh.xmly.dev/https://github.com/nixos/nixpkgs/archive/nixos-unstable.tar.gz"
+      }
+    },
+    "root": {
+      "inputs": {
+        "home-manager": "home-manager",
+        "miyu": "miyu",
+        "nixos-hardware": "nixos-hardware",
+        "nixpkgs": "nixpkgs_3"
+      }
+    },
+    "rust-overlay": {
+      "inputs": {
+        "nixpkgs": [
+          "miyu",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1784438913,
+        "narHash": "sha256-NYF7ZM5ip0u+w1pBFDpIGEbrbgN/wpnLFAmBkWkYMXw=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "afacd6819d3765a05814ee8e3de74c77d42ac799",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

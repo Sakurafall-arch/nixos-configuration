@@ -1,0 +1,50 @@
+* {
+    main-bg:            rgba ( 17, 17, 27, 90 % );
+    main-fg:            #cdd6f4;
+    main-br:            #cba6f7;
+    main-ex:            #f5e0dc;
+    select-bg:          #b4befe;
+    select-fg:          #11111b;
+    separatorcolor:     transparent;
+    border-color:       transparent;
+}
+
+window {
+    transparency:       "real";
+    background-color:   transparent;
+}
+
+mainbox {
+    background-color:   var(main-bg);
+    border-radius:      16px;
+    padding:            8px;
+}
+
+inputbar {
+    padding:            8px 12px;
+    background-color:   rgba ( 17, 17, 27, 40 % );
+    border-radius:      10px;
+}
+
+listview {
+    spacing:            4px;
+    padding:            4px;
+}
+
+element {
+    padding:            6px 10px;
+    border-radius:      10px;
+}
+
+element selected.normal {
+    background-color:   var(select-bg);
+    text-color:         var(select-fg);
+}
+
+element-icon {
+    size:               24px;
+}
+
+element-text {
+    text-color:         var(main-fg);
+}

@@ -1,0 +1,9 @@
+[General]
+firstStartup=false
+
+[WeatherLocations][1791247]
+index=0
+latitude=30.583330154418945
+locationName=Wuhan
+longitude=114.26667022705078
+timezone=Asia/Shanghai
