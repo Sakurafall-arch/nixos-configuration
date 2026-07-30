@@ -1,4 +1,4 @@
-# nixos-configuration
+# NixOS-configuration
 
 My NixOS flake configuration for **T2 MacBook**, featuring tmpfs root, Home Manager, and a Chinese-optimized desktop environment.
 
