@@ -1,0 +1,20 @@
+// 询问管理员权限功能（身份验证）
+spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+// 通知程序
+// 输入法
+spawn-at-startup "fcitx5"
+spawn-at-startup "nm-applet"
+spawn-at-startup "blueman-applet"
+spawn-at-startup "noctalia"
+spawn-at-startup "swww-daemon"
+spawn-at-startup "awww-daemon"
+spawn-sh-at-startup "awww-daemon --namespace overview"
+
+spawn-sh-at-startup "clipse --listen"
+
+// 导入 WAYLAND_DISPLAY 到 systemd 用户管理器
+spawn-sh-at-startup "systemctl --user import-environment WAYLAND_DISPLAY"
+spawn-sh-at-startup "systemctl --user start xdg-desktop-portal-wlr"
+
+spawn-at-startup "hypridle"
+spawn-at-startup  "hyprlax /home/nixos/Pictures/wallpapers/117497448_p0.jpg"

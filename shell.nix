@@ -1,0 +1,36 @@
+{pkgs, ... }:
+{
+ environment.systemPackages = with pkgs; [
+    python3
+    gtk3
+    nwg-look
+    lua5_4
+    e2fsprogs   
+    cmake
+    nodejs_24
+    nodejs
+    ninja
+    gcc
+    pkg-config
+    qt6.qtbase
+    qt6.qtdeclarative
+    qt6.qtshadertools
+    qt6.qttools
+    qt6Packages.qtkeychain
+    pipewire.dev
+    ncurses.dev
+    rustc
+    cargo
+    pkg-config
+    curl
+    glib
+    libsoup_3
+    webkitgtk_4_1
+    pkgs.nodejs_22
+    pkgs.pnpm 
+    btrfs-progs
+    udisks2
+    smartmontools
+    raylib
+ ];
+}

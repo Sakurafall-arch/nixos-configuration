@@ -1,0 +1,41 @@
+// --- NIRI BLUR START ---
+// --- NIRI BLUR START ---
+blur {
+   passes 4
+   offset 3
+   noise 0
+   saturation 1
+ }
+// 全局窗口规则。让所有普通窗口以xray的形式显示blur。xray仅渲染一次模糊版本的背景，然后将其以类似"壁纸"的形式显示在窗口后面，不是实时渲染模糊，所以完全没有性能消耗。
+window-rule {
+    background-effect {
+        xray true
+        blur true
+	liquid-glass {
+            edge-lighting 0.3
+            saturation 0.9
+            vibrancy 0.2
+            adaptive-dim 0.25
+            adaptive-boost 0.25
+            physical-refraction 0
+            refraction-dilute 6
+     	    lens-distortion 0
+	        fringing 0.0
+	        brightness 1.0
+            contrast 1
+            refraction-strength 6
+            power-factor 10
+            refraction-power 10
+            glow-weight 0.00
+
+        }
+    }
+}
+// 浮动窗口禁用xray可以实时渲染模糊效果但是性能消耗高，开启xray会穿过浮动窗口底下的窗口直接透视到桌面。看个人喜好选择禁用与否吧。
+window-rule {
+    match is-floating=true
+    background-effect {
+       xray true
+       blur true
+    }
+}
